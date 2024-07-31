@@ -1,0 +1,73 @@
+body {
+      background-color: #282c34;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+  }
+  
+  #desktop {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+  
+  /* Estilo para el botón */
+  #createWindowButton {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      border: 2px solid #333;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+  }
+  
+  #createWindowButton:hover {
+      background-color: #333;
+      color: #e0e0e0;
+      border-color: #555;
+  }
+  
+  #createWindowButton:active {
+      background-color: #444;
+  }
+  
+  /* Estilo para las ventanas */
+  .window {
+      width: 300px;
+      height: 200px;
+      background-color: #444;
+      border: 2px solid #888;
+      border-radius: 5px;
+      position: absolute;
+      overflow: hidden;
+      z-index: 100;
+      user-select: none;
+  }
+  
+  /* Estilo para la barra de título de las ventanas */
+  .title-bar {
+      background-color: #666;
+      padding: 10px;
+      cursor: move;
+      user-select: none;
+  }
+  
+  /* Estilo para el contenido de las ventanas */
+  .content {
+      padding: 10px;
+  }
+  
